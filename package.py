@@ -2,6 +2,12 @@ import os
 
 print "hello world"
 
-in_file = os.environ.get("in_files")
+build_file = os.environ.get("build_files")
 
-print in_file
+print build_file
+
+os.system("ls")
+
+ls_build_file = "ls "+build_file
+
+os.system(ls_build_file)
